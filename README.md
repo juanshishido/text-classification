@@ -16,3 +16,11 @@ Classify questions into **one** of the following categories:
 5. Education&Reference
 6. Health
 7. Science&Mathematics
+
+## Data
+
+Each document&mdash;a row in the data file representing a single
+question&mdash;is short.
+
+> The training data contains 2,698 questions, already labeled with one of the 
+above categories. The test data contains 1,874 questions that are unlabeled.
