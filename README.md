@@ -24,3 +24,17 @@ question&mdash;is short.
 
 > The training data contains 2,698 questions, already labeled with one of the 
 above categories. The test data contains 1,874 questions that are unlabeled.
+
+## Methods
+
+The data were loaded into pandas DataFrames. We removed HTML-escaped
+characters, such as `&#xd;&lt;br&gt;`, using regular expressions.
+
+We started with logistic regression and multinomial naive Bayes models.
+
+We then used a document similarity approach, using Scikit-Learn's
+`TfidfVectorizer` and `cosine_similarity` function.
+
+Finally, we experimented with support vector classifiers.
+
+All models were validated using cross-validation.
